@@ -2,10 +2,10 @@
   "name": "angular2-starter",
   "version": "0.1.0",
   "scripts": {
-    "build": "webpack --progress",
-    "build:prod": "webpack -p --progress",
-    "postinstall": "typings install",
-    "serve": "webpack-dev-server --inline --progress"
+    "build": "node node_modules/webpack/bin/webpack --progress",
+    "build:prod": "node node_modules/webpack/bin/webpack -p --progress",
+    "postinstall": "node node_modules/typings/dist/bin install",
+    "serve": "node node_modules/webpack-dev-server/bin/webpack-dev-server --inline --progress"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.4",
